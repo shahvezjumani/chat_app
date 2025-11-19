@@ -8,9 +8,9 @@ import AppRoutes from './routes/AppRoutes.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <StrictMode>
+    {/* <StrictMode> */}
       {/* <App /> */}
       <AppRoutes />
-    </StrictMode>
+    {/* </StrictMode>  */}
   </BrowserRouter>,
 )
