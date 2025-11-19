@@ -7,6 +7,7 @@ import { lazy } from 'react'
 import ProtectRoute from '../components/auth/ProtectRoute'
 import UserDashboard from '../pages/UserDashboard'
 import Groups from '../pages/Groups'
+import ChatPage from '@/components/shared/ChatPage'
 
 let user = true
 const Login = lazy(() => import('../pages/Login'))
@@ -21,6 +22,8 @@ const AppRoutes = () => {
             <Route element={<ProtectRoute user={user} />}>
                 <Route path='/' element={<App />} />
                 <Route path='/groups' element={<Groups />} />
+                <Route path='/chat' element={<ChatPage />} />
+
             </Route>
             <Route path='/login' element={<ProtectRoute user={!user} redirect='/'><Login /></ProtectRoute>} />
             <Route path='/signup' element={<Signup />} />

@@ -72,7 +72,7 @@ const Header = () => {
                     </div>
 
                     <div>
-                        <LogOut className="w-8 h-8 text-primary text-primart-dark cursor-pointer hover:text-zinc-100 transition" />
+                        <LogOut className="w-8 h-8 text-primary text-primart-dark cursor-pointer hover:text-zinc-100 transition" onClick={() => navigate("/chat")} />
                     </div>
 
 
